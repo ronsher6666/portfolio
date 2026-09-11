@@ -14,7 +14,8 @@
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#models">Models</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -40,25 +41,128 @@
                     <h3>Jaguar F-TYPE</h3>
                     <p>A thrilling sports car combining breathtaking performance with stunning design.</p>
                     <span class="model-price">From $60,000</span>
+                    <button class="view-specs-btn" onclick="toggleSpecs('ftype')">View Specs</button>
                 </div>
                 <div class="model-card">
                     <div class="model-image">🚗</div>
                     <h3>Jaguar XE</h3>
                     <p>Elegant sedan with precision handling and advanced technology.</p>
                     <span class="model-price">From $39,000</span>
+                    <button class="view-specs-btn" onclick="toggleSpecs('xe')">View Specs</button>
                 </div>
                 <div class="model-card">
                     <div class="model-image">🚙</div>
                     <h3>Jaguar F-PACE</h3>
                     <p>Performance SUV with luxury comfort and extraordinary agility.</p>
                     <span class="model-price">From $48,000</span>
+                    <button class="view-specs-btn" onclick="toggleSpecs('fpace')">View Specs</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="specifications">
+        <div class="container">
+            <h2>Vehicle Specifications</h2>
+            
+            <!-- F-TYPE Specs -->
+            <div id="ftype-specs" class="specs-detail hidden">
+                <h3>Jaguar F-TYPE Specifications</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <strong>Engine:</strong>
+                        <p>3.0L Supercharged V6</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Horsepower:</strong>
+                        <p>380 HP</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>0-60 mph:</strong>
+                        <p>4.8 seconds</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Top Speed:</strong>
+                        <p>170 mph</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Fuel Economy:</strong>
+                        <p>21 MPG Combined</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Transmission:</strong>
+                        <p>8-Speed Automatic</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XE Specs -->
+            <div id="xe-specs" class="specs-detail hidden">
+                <h3>Jaguar XE Specifications</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <strong>Engine:</strong>
+                        <p>2.0L Turbocharged 4-Cylinder</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Horsepower:</strong>
+                        <p>247 HP</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>0-60 mph:</strong>
+                        <p>6.2 seconds</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Top Speed:</strong>
+                        <p>146 mph</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Fuel Economy:</strong>
+                        <p>26 MPG Combined</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Transmission:</strong>
+                        <p>8-Speed Automatic</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- F-PACE Specs -->
+            <div id="fpace-specs" class="specs-detail hidden">
+                <h3>Jaguar F-PACE Specifications</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <strong>Engine:</strong>
+                        <p>3.0L Supercharged V6</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Horsepower:</strong>
+                        <p>380 HP</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>0-60 mph:</strong>
+                        <p>5.1 seconds</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Top Speed:</strong>
+                        <p>152 mph</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Fuel Economy:</strong>
+                        <p>23 MPG Combined</p>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Transmission:</strong>
+                        <p>8-Speed Automatic</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section class="features">
         <div class="container">
             <h2>Why Choose Jaguar?</h2>
             <div class="features-grid">
@@ -90,18 +194,103 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The F-TYPE is an absolute beast! Performance, style, and comfort all in one. I couldn't ask for a better car."</p>
+                    <p class="testimonial-author">- John Mitchell</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"My XE is the perfect daily driver. Luxurious interior, great handling, and excellent fuel economy. Highly recommended!"</p>
+                    <p class="testimonial-author">- Sarah Johnson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The F-PACE combines SUV practicality with sports car performance. Best decision I've made. Love this vehicle!"</p>
+                    <p class="testimonial-author">- David Chen</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Exceptional quality and customer service. The Jaguar experience is truly world-class. Worth every penny!"</p>
+                    <p class="testimonial-author">- Emma Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                <div class="gallery-item">🏁</div>
-                <div class="gallery-item">🌃</div>
-                <div class="gallery-item">🛣️</div>
-                <div class="gallery-item">🌅</div>
-                <div class="gallery-item">🏔️</div>
-                <div class="gallery-item">🌊</div>
+                <div class="gallery-item" onclick="openModal('img1')">
+                    <div class="gallery-placeholder">🏁 Racing</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img2')">
+                    <div class="gallery-placeholder">🌃 City Drive</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img3')">
+                    <div class="gallery-placeholder">🛣️ Highway</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img4')">
+                    <div class="gallery-placeholder">🌅 Sunset</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img5')">
+                    <div class="gallery-placeholder">🏔️ Mountain</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img6')">
+                    <div class="gallery-placeholder">🌊 Coastal</div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Test Drive Section -->
+    <section class="test-drive">
+        <div class="container">
+            <h2>Book a Test Drive</h2>
+            <p>Experience the thrill of Jaguar performance firsthand</p>
+            <form class="test-drive-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Model</option>
+                        <option value="ftype">Jaguar F-TYPE</option>
+                        <option value="xe">Jaguar XE</option>
+                        <option value="fpace">Jaguar F-PACE</option>
+                    </select>
+                </div>
+                <input type="date" required>
+                <button type="submit" class="submit-button">Book Test Drive</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest news and exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="submit-button">Subscribe</button>
+            </form>
         </div>
     </section>
 
